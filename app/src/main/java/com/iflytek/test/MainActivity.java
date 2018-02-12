@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_test1).setOnClickListener(this);
         mTestSync = new TestSync();
         mTestSync1 = new TestSync();
+        //创建分支develop,init
+
 
     }
 
