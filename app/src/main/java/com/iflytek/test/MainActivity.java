@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mTestSync1 = new TestSync();
         //创建分支develop,init this is master
         //创建分支develop,this is develop change
-
-
     }
 
     public void inMaster() {
