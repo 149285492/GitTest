@@ -2,9 +2,11 @@ package com.iflytek.test;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    private static final String TAG = "MainActivity";
     private TestSync mTestSync;
     private TestSync mTestSync1;
 
@@ -20,6 +22,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //创建分支develop,this is develop change
 
 
+    }
+
+    public void inMaster() {
+        Log.d(TAG, "this is in Master git");
     }
 
     @Override
