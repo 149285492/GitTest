@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void inMaster() {
         Log.d(TAG, "this is in Master git");
+    }
+
     public void inDevelopMethod() {
         Log.d(TAG, "this is a develop project");
     }
