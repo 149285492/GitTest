@@ -7,18 +7,5 @@
     android:orientation="vertical"
     tools:context="com.iflytek.test.MainActivity">
 
-    <Button
-        android:id="@+id/btn_test"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="开始执行第一个方法"
-        />
-
-    <Button
-        android:id="@+id/btn_test1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="test1,测试1个方法运行时,调用另一个方法"
-        />
 
 </LinearLayout>
