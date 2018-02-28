@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
+import com.iflytek.test.sync.TestSync;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String TAG = "MainActivity";
     private TestSync mTestSync;
@@ -23,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void inDevelopMethod() {
         Log.d(TAG, "this is a develop project");
+
+        Log.d(TAG, "change method in local");
     }
 
     @Override

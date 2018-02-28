@@ -1,4 +1,4 @@
-package com.iflytek.test;
+package com.iflytek.test.sync;
 
 import android.util.Log;
 
