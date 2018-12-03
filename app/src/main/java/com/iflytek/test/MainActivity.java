@@ -18,5 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //测试提交
 
         //测试reset
+
+        //测试interactivity
     }
 }
