@@ -1,0 +1,32 @@
+Index: app/src/main/java/com/iflytek/test/Test.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/iflytek/test/Test.java	(revision b5a42852a7915a2b31e35af5059f013a19ff3992)
++++ app/src/main/java/com/iflytek/test/Test.java	(revision b5a42852a7915a2b31e35af5059f013a19ff3992)
+@@ -0,0 +1,9 @@
++package com.iflytek.test;
++
++/**
++ * Created by jiwang on 2018/12/3.
++ * 备注:
++ */
++public class Test {
++    //
++}
+Index: app/src/main/java/com/iflytek/test/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/iflytek/test/MainActivity.java	(date 1543828810000)
++++ app/src/main/java/com/iflytek/test/MainActivity.java	(date 1543830110000)
+@@ -20,5 +20,7 @@
+         //测试提交1
+ 
+         //测试提交2 mixed 可以回退commit,从新提交 Hard 不仅回退commit,并且代码也回退
++
++        //测试3
+     }
+ }
