@@ -22,5 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //测试interactivity
 
         //修改interactively代码
+
+        //check out version
     }
 }
