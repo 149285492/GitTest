@@ -1,0 +1,109 @@
+Index: [修改代码]_测试2.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- [修改代码]_测试2.patch	(revision 71254fd33a1e7d3919893ef9096349ea50f058da)
++++ [修改代码]_测试2.patch	(revision 71254fd33a1e7d3919893ef9096349ea50f058da)
+@@ -1,32 +0,0 @@
+-Index: app/src/main/java/com/iflytek/test/Test.java
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- app/src/main/java/com/iflytek/test/Test.java	(revision b5a42852a7915a2b31e35af5059f013a19ff3992)
+-+++ app/src/main/java/com/iflytek/test/Test.java	(revision b5a42852a7915a2b31e35af5059f013a19ff3992)
+-@@ -0,0 +1,9 @@
+-+package com.iflytek.test;
+-+
+-+/**
+-+ * Created by jiwang on 2018/12/3.
+-+ * 备注:
+-+ */
+-+public class Test {
+-+    //
+-+}
+-Index: app/src/main/java/com/iflytek/test/MainActivity.java
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- app/src/main/java/com/iflytek/test/MainActivity.java	(date 1543828810000)
+-+++ app/src/main/java/com/iflytek/test/MainActivity.java	(date 1543830110000)
+-@@ -20,5 +20,7 @@
+-         //测试提交1
+- 
+-         //测试提交2 mixed 可以回退commit,从新提交 Hard 不仅回退commit,并且代码也回退
+-+
+-+        //测试3
+-     }
+- }
+Index: [修改代码]_测试提交.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- [修改代码]_测试提交.patch	(revision 71254fd33a1e7d3919893ef9096349ea50f058da)
++++ [修改代码]_测试提交.patch	(revision 71254fd33a1e7d3919893ef9096349ea50f058da)
+@@ -1,14 +0,0 @@
+-Index: app/src/main/java/com/iflytek/test/MainActivity.java
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- app/src/main/java/com/iflytek/test/MainActivity.java	(revision 0209da58a3892fd530bb3cf2b471f702b950308c)
+-+++ app/src/main/java/com/iflytek/test/MainActivity.java	(revision d9de58448fbf75965671110cfa7aa60ee03cfd4c)
+-@@ -15,5 +15,6 @@
+- 
+-     @Override
+-     public void onClick(View v) {
+-+        //测试提交
+-     }
+- }
+Index: app/src/main/java/com/iflytek/test/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/iflytek/test/MainActivity.java	(revision 71254fd33a1e7d3919893ef9096349ea50f058da)
++++ app/src/main/java/com/iflytek/test/MainActivity.java	(revision 65943a64923fafbe80d7bc87810969b940dc3d8f)
+@@ -15,6 +15,23 @@
+ 
+     @Override
+     public void onClick(View v) {
+-        //测试提交
++        //1.回退本地commit
++        //soft 方式,当前代码不变
++        //Mixed 方式,当前代码不变,只是撤销commit
++        //Hard 方式 会回退到指定版本的代码,丢弃当前代码
++        //Keep 方式 貌似和Hard差不多,并丢弃当前代码
++
++        //2 revert 回退到当前commit,并且又一次merge(包含:本地代码更改,本地commit树,服务器代码),并且声称一次提交,丢弃当前代码
++        // 可以再使用reset current branch to here soft 方式,将这次revert合并
++        // 本地代码变动
++        //会弹出弹框选择第一个会丢弃当前代码,选择第二个会保存当前代码
++        // 测试选择第二个,会保存当前代码吗,会保存
++        // 测试选择第二个
++
++        //interactivly rebase from here 之后提交
++        //撤销提交
++        //更改代码
++        //123123123123123
++
+     }
+ }
+Index: app/src/main/java/com/iflytek/test/Test.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/iflytek/test/Test.java	(revision 71254fd33a1e7d3919893ef9096349ea50f058da)
++++ app/src/main/java/com/iflytek/test/Test.java	(revision 65943a64923fafbe80d7bc87810969b940dc3d8f)
+@@ -5,5 +5,6 @@
+  * 备注:
+  */
+ public class Test {
+-    //
++    //reset commit
++
+ }

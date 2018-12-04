@@ -1,0 +1,15 @@
+Index: app/src/main/java/com/iflytek/test/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/iflytek/test/MainActivity.java	(revision c0b7c998f683bb44c26a60619a3c917fe7c684d1)
++++ app/src/main/java/com/iflytek/test/MainActivity.java	(revision 46c3984b0fdff7dc02537ca4e0a981d335b6a9b6)
+@@ -31,7 +31,6 @@
+         //interactivly rebase from here 之后提交
+         //撤销提交
+         //更改代码
+-        //123123123123123
+ 
+     }
+ }
