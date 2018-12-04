@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Hard 方式 会回退到指定版本的代码,丢弃当前代码
         //Keep 方式 貌似和Hard差不多,并丢弃当前代码
 
-        //2 revert 回退到当前commit,并且声称一次提交,丢弃当前代码
+        //2 revert 回退到当前commit,并且又一次merge(包含:本地代码更改,本地commit树,服务器代码),并且声称一次提交,丢弃当前代码
+        // 可以再使用reset current branch to here soft 方式,将这次revert合并
     }
 }
