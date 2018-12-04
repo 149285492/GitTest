@@ -23,6 +23,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //2 revert 回退到当前commit,并且又一次merge(包含:本地代码更改,本地commit树,服务器代码),并且声称一次提交,丢弃当前代码
         // 可以再使用reset current branch to here soft 方式,将这次revert合并
-        // 本地代码变动 不知道会不会保存
+        // 本地代码变动 
     }
 }
