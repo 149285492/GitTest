@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+        //123123123123
         //1.回退本地commit
         //soft 方式,当前代码不变
         //Mixed 方式,当前代码不变,只是撤销commit
