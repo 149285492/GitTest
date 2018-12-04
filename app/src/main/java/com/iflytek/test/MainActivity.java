@@ -1,5 +1,6 @@
 package com.iflytek.test;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -16,5 +17,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         //测试提交
+        Intent intent = new Intent();
+        //reset current branch to hear 之后还要合并提交一次
+        //revert则直接恢复到那个状态,新增一次提交
     }
 }
