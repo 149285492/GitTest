@@ -26,6 +26,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         // 测试commit reset current branch to here
 
-        //ceshi
+        //测试revert
     }
 }
