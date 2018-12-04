@@ -20,5 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //测试reset
 
         //测试interactivity
+
+        //check out version
     }
 }
