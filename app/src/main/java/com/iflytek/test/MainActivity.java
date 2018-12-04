@@ -20,5 +20,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent();
         //reset current branch to hear 之后还要合并提交一次
         //revert则直接恢复到那个状态,新增一次提交
+
+        //测试commit 1
+        // 2131231
+
+        // 测试commit reset current branch to here
     }
 }
